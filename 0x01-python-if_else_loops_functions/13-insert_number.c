@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include "lists.h"
 
 /**
 * insert_node - insert node in the right place.
