@@ -1,0 +1,1 @@
+Starting with pythom exceptions
