@@ -1,1 +1,0 @@
-Starting with new concepts
