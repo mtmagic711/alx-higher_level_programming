@@ -2,6 +2,6 @@
 """Define a class rectangle"""
 
 
-class rectangle():
+class Rectangle():
     """the class rectangle"""
     pass
