@@ -1,0 +1,59 @@
+How to use the 0-add_integer.py
+================================
+
+the function add_integer() expect two arguments,
+and return the sum of them.
+
+::
+
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(5, 6)
+11
+
+::
+
+If two strings passed it should print
+a must be an integer.
+
+>>> add_integer("hello", "there")
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+::
+
+if a float passed to the function it will be casted
+to integer.
+
+>>> add_integer(4, 8.0)
+12
+
+::
+
+Passing one value, the other is by default 98.
+
+>>> add_integer(100)
+198
+
+::
+
+Passing a negative value.
+
+>>> add_integer(5, -3)
+2
+
+::
+
+passing None in arguments.
+
+>>> add_integer(5, None)
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+::
+
+Passing None in both arguments, a TypeError message is only
+printed for the first argument.
+
+
+Traceback (most recent call last):
+TypeError: a must be an integer
