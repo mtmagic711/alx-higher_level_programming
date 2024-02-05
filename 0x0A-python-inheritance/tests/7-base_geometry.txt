@@ -27,7 +27,7 @@ case 2 : value equal to zero.
 
 >>> bg.integer_validator('name', 0)
 Traceback (most recent call last):
-ValueError: <name> must be greater than 0
+ValueError: name must be greater than 0
 
 ::
 
@@ -35,21 +35,15 @@ case 3 : value is negative.
 
 >>> bg.integer_validator('name', -43)
 Traceback (most recent call last):
-ValueError: <name> must be greater than 0
+ValueError: name must be greater than 0
 
 ::
 
-case 4 : name is not a string.
+case 5 :  value is not a number.
 
->>> bg.integer_validator(34, 12)
-
-::
-
-case 5 : name is not string and value is not a number.
-
->>> bg.integer_validator(34, 'avdva')
+>>> bg.integer_validator('name', 'avdva')
 Traceback (most recent call last):
-TypeError: <name> must be an integer
+TypeError: name must be an integer
 
 ::
 
@@ -111,9 +105,9 @@ TypeError: BaseGeometry.area() takes 1 positional argument but 3 were given
 case 12 : passing None to integer_validator.
 
 >>> bg = BaseGeometry()
->>> bg.integer_validator("my_int", None)
+>>> bg.integer_validator("name", None)
 Traceback (most recent call last):
-TypeError: <name> must be an integer
+TypeError: name must be an integer
 
 
 ::
@@ -121,17 +115,17 @@ TypeError: <name> must be an integer
 case 13 : passing a list to integer_validator.
 
 >>> bg = BaseGeometry()
->>> bg.integer_validator("my_int", [12, 4])
+>>> bg.integer_validator("name", [12, 4])
 Traceback (most recent call last):
-TypeError: <name> must be an integer
+TypeError: name must be an integer
 
 ::
 
 case 14 : passing a tuple to integer_validator.
 
 >>> bg = BaseGeometry()
->>> bg.integer_validator("my_int", (12, 4))
+>>> bg.integer_validator("name", (12, 4))
 Traceback (most recent call last):
-TypeError: <name> must be an integer
+TypeError: name must be an integer
 
 ::
