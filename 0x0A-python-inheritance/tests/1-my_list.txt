@@ -62,3 +62,23 @@ testing negative numbers [-3, 1, -61, 7, 88, 0]
 [-61, -3, 0, 1, 7, 88]
 
 ::
+
+testing parent object
+
+>>> my_list = [1, 2, 3]
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'print_sorted'
+
+::
+
+testing not defined object
+
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list2.print_sorted()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'my_list2' is not defined
+
+::
