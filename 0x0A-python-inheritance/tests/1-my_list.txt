@@ -1,0 +1,64 @@
+============================
+How to use 1-my_list.py
+============================
+
+print_sorted(self) is a function that print a sorted list
+in ascending order.
+
+::
+
+importing the module.
+
+>>> MyList = __import__('1-my_list').MyList
+
+::
+
+testing [7, 3, 5, 2]
+
+>>> f_list = [7, 3, 5, 2]
+>>> print(f_list)
+[7, 3, 5, 2]
+>>> MyList.print_sorted(f_list)
+[2, 3, 5, 7]
+
+::
+
+testing empty list []
+
+>>> f_list = []
+>>> print(f_list)
+[]
+>>> MyList.print_sorted(f_list)
+[]
+
+::
+
+testing 1 element test [7]
+
+>>> f_list = [7]
+>>> print(f_list)
+[7]
+>>> MyList.print_sorted(f_list)
+[7]
+
+::
+
+testing a list of the same numbers [1, 1, 1, 1]
+
+>>> f_list = [1, 1, 1, 1]
+>>> print(f_list)
+[1, 1, 1, 1]
+>>> MyList.print_sorted(f_list)
+[1, 1, 1, 1]
+
+::
+
+testing negative numbers [-3, 1, -61, 7, 88, 0]
+
+>>> f_list = [-3, 1, -61, 7, 88, 0]
+>>> print(f_list)
+[-3, 1, -61, 7, 88, 0]
+>>> MyList.print_sorted(f_list)
+[-61, -3, 0, 1, 7, 88]
+
+::
