@@ -2,6 +2,7 @@
 """A class Base."""
 import json
 
+
 class Base:
     """ A class Base."""
 
