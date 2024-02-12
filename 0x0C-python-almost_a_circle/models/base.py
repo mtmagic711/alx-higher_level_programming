@@ -51,6 +51,5 @@ class Base:
             dummy_instance = cls(1)
         else:
             raise ValueError("Unsupported class")
-
         dummy_instance.update(**dictionary)
         return dummy_instance
