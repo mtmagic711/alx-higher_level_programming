@@ -73,7 +73,11 @@ class Rectangle(Base):
     def display(self):
         """display the rectangle in # form"""
 
+        for verti in range(self.y):
+            print("")
         for i in range(self.height):
+            for horiz in range(self.x):
+                print("", end=' ')
             for j in range(self.width):
                 print("#", end='')
             print('')
